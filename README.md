@@ -17,5 +17,5 @@ install_github(repo = "<package repo>")
 ```
 Example: 
 ```R
-install_github(repo = "dungkhuc/PersonalRLib/LinearRegressionSample"\\
+install_github(repo = "dungkhuc/PersonalRLib/LinearRegressionSample"
 ```
