@@ -5,12 +5,10 @@ Contains my personal R library for everyday uses
 Install R packages from Github
 
 1. Install devtools package and loaded as library
-
 ```R
 install.packages("devtools")
 library(devtools)
 ```
-
 2. Install desired package from Github:
 
 ```R
