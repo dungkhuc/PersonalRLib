@@ -10,7 +10,7 @@ tufteBar = function (dat, x, y=NULL, color = "black",
   
   # Sum of values in column y, with label in column x
   else gplot = ggplot(dat, aes_string(x = x, y = y)) + geom_bar(stat="identity", width=0.6, fill=color)
-  if (exists("gplot")) tufteTheme(gplot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color)
+  if (exists("gplot")) tufteBarTheme(gplot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color)
 }
 tufteBarTheme = function (tuftePlot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color) {
 
