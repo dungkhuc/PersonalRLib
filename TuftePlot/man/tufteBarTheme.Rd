@@ -45,7 +45,6 @@ tufteTheme(tuftePlot, x.text.rotate, y.text.rotate, font, font_size, x.text.colo
 }
 \examples{
 
-  }
 }
 
 
