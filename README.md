@@ -3,6 +3,7 @@ Contains my personal R library for everyday uses
 
 # How to install
 Install R packages from Github
+
 1. Install devtools package and loaded as library
 
 ```R
