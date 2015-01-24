@@ -2,78 +2,66 @@
 \alias{tufteBar}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Create a bar plot according to Tufte's principle.
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+This function makes it easy to create a minimalistic bar plot according to Tufte's principle. ggplot2 and ggthemes are used.
 }
 \usage{
 tufteBar(dat, x, y = NULL, font = "Arial", font_size = 20, col = "black")
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{dat}{
-%%     ~~Describe \code{dat} here~~
-}
+  data.frame object
+  }
   \item{x}{
-%%     ~~Describe \code{x} here~~
-}
+  Name of column in data frame specified. Data in this column will be used for x axis.
+  }
   \item{y}{
-%%     ~~Describe \code{y} here~~
-}
+  Name of column in data frame specified. Data in this column will be used for y axis. If not specified, this function will count the occurences of each value in x.
+  }
+  \item{x.text.rotate} {
+  Rotate text in x-axis. [0...360]. 
+  }
+  \item{y.text.rotate} {
+  Rotate text in y-axis. [0...360].
+  }
   \item{font}{
-%%     ~~Describe \code{font} here~~
-}
+  Specify font. 
+  }
   \item{font_size}{
-%%     ~~Describe \code{font_size} here~~
-}
-  \item{col}{
-%%     ~~Describe \code{col} here~~
-}
+  Specify font size.
+  }
+  \item{color}{
+  Specify color of the bar.
+  }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+The function will sum up values in y that have same corresponding value in x.
+If y is not specified, the function will count the occurences of each unique value in x.
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+Return a ggplot.
 }
 \references{
-%% ~put references to the literature/web site here ~
+
 }
 \author{
-%%  ~~who you are~~
+Dung Khuc.
 }
 \note{
-%%  ~~further notes~~
+
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
+
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 
-## The function is currently defined as
-function (dat, x, y = NULL, font = "Arial", font_size = 20, col = "black") 
-{
-    if (is.null(y)) 
-        gplot = ggplot(dat, aes(x = order)) + geom_bar(stat = "bin", 
-            width = 0.6, fill = col)
-    else gplot = ggplot(dat, aes_string(x = x, y = y)) + geom_bar(stat = "identity", 
-        width = 0.6, fill = col)
-    if (exists("gplot")) 
-        tufteTheme(gplot, font, font_size)
-  }
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
+
 \keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\keyword{ ~kwd2 }

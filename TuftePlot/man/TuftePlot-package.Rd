@@ -3,12 +3,10 @@
 \alias{TuftePlot}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+This package aims to provide methods to create various graph strictly according to Tufte's principles.
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+
 }
 \details{
 \tabular{ll}{
@@ -16,25 +14,23 @@ Package: \tab TuftePlot\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2015-01-24\cr
-License: \tab What license is it under?\cr
+License: \tab \cr
 }
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Dung Khuc
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Dung Khuc <dung.khucquang@aalto.fi>
 }
 \references{
-~~ Literature or other references for background information ~~
+The Visual Display of Quantitative Information - Edward R. Tufte
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
+
 \keyword{ package }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+
 }
 \examples{
-~~ simple examples of the most important functions ~~
+
 }
