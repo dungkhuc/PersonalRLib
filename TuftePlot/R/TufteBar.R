@@ -12,7 +12,7 @@ tufteBar = function (dat, x, y=NULL, color = "black",
   else gplot = ggplot(dat, aes_string(x = x, y = y)) + geom_bar(stat="identity", width=0.6, fill=color)
   if (exists("gplot")) tufteTheme(gplot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color)
 }
-tufteTheme = function (tuftePlot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color) {
+tufteBarTheme = function (tuftePlot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color) {
 
   tuftePlot = tuftePlot + theme_tufte(base_family=font, base_size=font_size, ticks=F)
   
@@ -25,5 +25,3 @@ tufteTheme = function (tuftePlot, x.text.rotate, y.text.rotate, font, font_size,
                           geom_hline(yintercept=y.axis.ticks, col="white", lwd=1.2)
   tuftePlot
 }
-
-
