@@ -2,6 +2,17 @@
 ## Description
 The package aims to be an easy method to create plots in minimalistic format. This is an extension from 'ggplot2' and 'ggthemes' package.
 
+## Installation
+If you don't have 'devtools' package installed:
+```R
+install.packages("devtools")
+```
+
+Install this package:
+```R
+devtools::install_github("dungkhuc/PersonalRLib/MinPlot")
+```
+
 ## Reference
 So far, this package is inspired by suggestions in the book "The Visual Display of Quantitative Information" by Edward Tufte.
 
