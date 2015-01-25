@@ -1,5 +1,5 @@
 tufteBar = function (dat, x, y=NULL, classify = NULL,
-                     summary = "culmulative",
+                     summary = "culmulative", y.breaks = 5,
                      width = 0.6, color = "Dark2",
                      x.text.rotate = 0, y.text.rotate=0,
                      font="Arial", font_size= 20,
@@ -41,11 +41,11 @@ tufteBar = function (dat, x, y=NULL, classify = NULL,
   
   if (exists("barplot")) {
     barplot =  barplot + scale_fill_brewer(palette = color)
-    tufteBarTheme(barplot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color)
+    tufteBarTheme(barplot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color, y.breaks)
   }
 }
-tufteBarTheme = function (tuftePlot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color) {
-
+tufteBarTheme = function (tuftePlot, x.text.rotate, y.text.rotate, font, font_size, x.text.color, y.text.color, y.breaks) {
+  tuftePlot = tuftePlot + scale_y_continuous(breaks = pretty_breaks(n = y.breaks))
   tuftePlot = tuftePlot + theme_tufte(base_family=font, base_size=font_size, ticks=F)
   
   # Get ticks on y axis
