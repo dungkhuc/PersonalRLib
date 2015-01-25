@@ -11,7 +11,7 @@ So far, this package is inspired by suggestions in the book "The Visual Display 
 ```R
 tufteBar(msleep, x = "order", x.text.rotate = 45)
 ```
-![alt tag](https://github.com/dungkhuc/PersonalRLib/blob/master/SimpleBar.png)
+![alt tag](https://github.com/dungkhuc/PersonalRLib/blob/master/SimpleBar.png) 
 
 ### Dodged bar plot, mean value of each case
 ```R
