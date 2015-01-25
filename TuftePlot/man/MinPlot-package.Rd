@@ -1,6 +1,6 @@
-\name{TuftePlot-package}
-\alias{TuftePlot-package}
-\alias{TuftePlot}
+\name{MinPlot-package}
+\alias{MinPlot-package}
+\alias{MinPlot}
 \docType{package}
 \title{
 This package aims to provide methods to create various graph strictly according to Tufte's principles.
@@ -10,7 +10,7 @@ This package aims to provide methods to create various graph strictly according 
 }
 \details{
 \tabular{ll}{
-Package: \tab TuftePlot\cr
+Package: \tab MinPlot\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2015-01-24\cr
