@@ -7,4 +7,4 @@ Author: Dung Khuc
 Maintainer: Dung Khuc <dung.khucquang@aalto.fi>
 Description: More about what it does (maybe more than one line)
 License: GPL
-Depends: ggplot2, ggthemes, scales
+Depends: R (>= 2.15.2), ggplot2, ggthemes, scales
